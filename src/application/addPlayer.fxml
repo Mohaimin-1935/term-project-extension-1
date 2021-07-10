@@ -52,13 +52,21 @@
             <Label text="Country" GridPane.columnIndex="1" />
             <Label text="Age" GridPane.rowIndex="2" />
             <Label text="Height" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label text="Clu" GridPane.rowIndex="4" />
+            <Label text="Club" GridPane.rowIndex="4" />
             <Label text="Position" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <Label text="Weekly Salary" GridPane.rowIndex="6" />
+            <Label text="Number" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="number" prefHeight="59.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
          </children>
       </GridPane>
-      <Label fx:id="error" layoutX="150.0" layoutY="485.0" text="Error: red" textFill="RED" />
-      <Label fx:id="success" layoutX="150.0" layoutY="485.0" text="Success: I am green" textFill="LIME" />
+      <Label fx:id="error" layoutX="150.0" layoutY="485.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="success" layoutX="150.0" layoutY="485.0" textFill="#02bf4a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
       <Button fx:id="addPlayer" layoutX="345.0" layoutY="520.0" mnemonicParsing="false" onAction="#handleAddPlayer" prefHeight="42.0" prefWidth="260.0" text="Add" textFill="WHITE">
          <font>
             <Font size="16.0" />
